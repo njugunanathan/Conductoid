@@ -1,0 +1,45 @@
+<form action="/register" method="post" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Registration Form</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="3" maxlength="20" pattern="[A-Za-z0-9]+" title="Only letters and numbers allowed" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6" required><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">--Select--</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+        </select><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message..."></textarea><br>
+
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" checked><br>
+
+        <label for="profile-pic">Profile Picture:</label>
+        <input type="file" id="profile-pic" name="profile-pic" accept="image/*"><br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+    </fieldset>
+</form>
+
+
+
+
+
+
